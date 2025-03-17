@@ -1,0 +1,87 @@
+-- select department_id, count(*)
+-- AS total_employees
+-- -- from HR.employees GROUP BY department_id;
+---- Done 
+
+ 2. Find the average salary in each department
+-- SELECT department_id, AVG(salary) AS avg_salary
+-- FROM HR.employees
+-- GROUP BY department_id;
+-- ---- Done 
+--  3. Find the maximum and minimum salary in each department
+-- SELECT department_id, MAX(salary) AS max_salary, MIN(salary) AS min_salary
+-- FROM HR.employees
+-- GROUP BY department_id;
+-- -- Done
+-- SELECT department_id, SUM(salary) AS total_salary
+-- FROM Hr.employees
+-- GROUP BY department_id;
+-- Done
+-- SELECT job_id, COUNT(*) AS total_employees
+-- FROM HR.employees
+-- GROUP BY job_id;
+-- Done
+-- SELECT job_id, AVG(salary) AS avg_salary
+-- FROM HR.employees
+-- GROUP BY job_id;
+-- Done
+-- SELECT job_id, MAX(salary) AS max_salary
+-- FROM HR.employees
+-- GROUP BY job_id;
+-- Done
+-- SELECT job_id, MIN(salary) AS min_salary
+-- FROM HR.employees
+-- GROUP BY job_id;
+-- Done 
+-- SELECT job_id, SUM(salary) AS total_salary
+-- FROM HR.employees
+-- GROUP BY job_id;
+-- Done
+-- SELECT EXTRACT(YEAR FROM hire_date) AS hire_year, COUNT(*) AS total_employees
+-- FROM HR.employees
+-- GROUP BY EXTRACT(YEAR FROM hire_date)
+-- ORDER BY hire_year;
+-- Done
+-- SELECT manager_id, COUNT(*) AS team_size
+-- FROM HR.employees
+-- WHERE manager_id IS NOT NULL
+-- GROUP BY manager_id;
+-- Done
+-- SELECT manager_id, MAX(salary) AS max_salary
+-- FROM HR.employees
+-- WHERE manager_id IS NOT NULL
+-- GROUP BY manager_id;
+-- Done
+-- SELECT manager_id, AVG(salary) AS avg_salary
+-- FROM HR.employees
+-- WHERE manager_id IS NOT NULL
+-- GROUP BY manager_id;
+-- Done
+-- SELECT EXTRACT(MONTH FROM hire_date) AS hire_month, COUNT(*) AS total_hired
+-- FROM HR.employees
+-- GROUP BY EXTRACT(MONTH FROM hire_date)
+-- ORDER BY hire_month;
+-- Done
+-- SELECT department_id, SUM(salary) AS total_salary
+-- FROM HR.employees
+-- GROUP BY department_id
+-- ORDER BY total_salary DESC
+-- FETCH FIRST 1 ROW ONLY;
+-- Done
+-- SELECT job_id, AVG(salary) AS avg_salary
+-- FROM HR.employees
+-- GROUP BY job_id
+-- ORDER BY avg_salary DESC
+-- FETCH FIRST 1 ROW ONLY;
+-- Done
+-- SELECT department_id, COUNT(*) AS employees_with_commission
+-- FROM HR.employees
+-- WHERE commission_pct IS NOT NULL
+-- GROUP BY department_id;
+-- Done
+-- SELECT department_id, SUM(salary) AS total_salary_with_commission
+-- FROM HR.employees
+-- WHERE commission_pct IS NOT NULL
+-- GROUP BY department_id;
+-- Done
+
